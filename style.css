@@ -22,6 +22,7 @@ a{
     height:64px;
     line-height: 64px;
     background-color: #5C6B78;
+    position: fixed;
 }
 .header .logo img{
     height: 36px;
@@ -49,7 +50,10 @@ a{
 .header ul li a.demo-button{
     color: #8dc63f;
 }
-.header a:hover,.header img,.header button:hover{
+.header a:hover{
+    color: #fff;
+}
+.header img,.header button:hover{
     opacity: 0.8;
 }
 .header ul ol{
@@ -74,7 +78,6 @@ a{
 .header ul ol>li a{
     font-size: 0.8rem;
     text-transform: uppercase;
-
     padding: 1.25em;
     line-height: 1;
     font-weight: 600;
@@ -86,16 +89,20 @@ a{
     width:9px;
     height:6px;
     display: inline-block;
+    opacity: 0.5;
 }
 .header input[type="email"] {
     background-color: rgba(255, 255, 255, 0.15);
     border: 0;
     outline: none;
     text-indent: 3px;
-    color: #fff;
     font-size: 14px;
     padding: 8px;
     width: 150px;
+}
+.header input[type="email"]::placeholder{
+    color:#fff;
+    font-size: 12px;
 }
 .header .btn{
     background-color: #8dc63f;
@@ -599,7 +606,7 @@ footer .footer-signup input[type="submit"]{
     height:48px;
     border:none;
     color: #fff;
-    font-weight: 500;
+    font-weight: 600;
     padding:0 12px;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
